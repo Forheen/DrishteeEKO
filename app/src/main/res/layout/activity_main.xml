@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp">
 
     <Button
         android:id="@+id/capture_fingerprint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Capture Fingerprint"
-        android:layout_centerInParent="true" />
+        android:text="Capture Fingerprint" />
+
+    <Button
+        android:id="@+id/device_info_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Device Info"
+        android:layout_below="@id/capture_fingerprint"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/result_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/device_info_button"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textColor="#FF0000" /> <!-- Red color for errors -->
+
 </RelativeLayout>
